@@ -3,6 +3,11 @@ trigger:
 
 pr: none
 
+variables:
+ 
+  # We build on linux to remove any dependancies on windows stuff / can move to GCP or AWS
+  vmImageName: 'ubuntu-latest'
+
 stages:
   - stage: Build
     displayName: Build stage
