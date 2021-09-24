@@ -13,9 +13,6 @@ variables:
   # We build on linux to remove any dependancies on windows stuff / can move to GCP or AWS
   vmImageName: 'ubuntu-18.04'
 
-  # A sample url to be consumed from the react app as environment variable
-  apiDomain: 'http://dummy.restapiexample.com/api/v1/'
-
 stages:
   - stage: Build
     displayName: Build stage
